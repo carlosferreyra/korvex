@@ -1,0 +1,12 @@
+[package]
+name = "korvex-gen"
+description = "Code generation engine — emits idiomatic bindings for each target language."
+version.workspace = true
+edition = "2021"
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+
+[dependencies]
+korvex-types = { path = "../korvex-types" }

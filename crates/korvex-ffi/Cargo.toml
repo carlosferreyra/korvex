@@ -1,0 +1,12 @@
+[package]
+name = "korvex-ffi"
+description = "FFI layer and ABI bridge — exposes Rust types across language boundaries."
+version.workspace = true
+edition = "2021"
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+
+[dependencies]
+korvex-types = { path = "../korvex-types" }

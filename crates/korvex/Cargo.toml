@@ -1,0 +1,14 @@
+[package]
+name = "korvex"
+description = "Core SDK library — the main entry point for the Korvex binding engine."
+version.workspace = true
+edition = "2021"
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+
+[dependencies]
+korvex-types = { path = "../korvex-types" }
+korvex-ffi = { path = "../korvex-ffi" }
+korvex-gen = { path = "../korvex-gen" }

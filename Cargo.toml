@@ -1,0 +1,18 @@
+[workspace]
+members = [
+    "crates/korvex",
+    "crates/korvex-cli",
+    "crates/korvex-types",
+    "crates/korvex-ffi",
+    "crates/korvex-gen",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Carlos Eduardo Ferreyra <eduferreyraok@gmail.com>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/carlosferreyra/korvex"
+homepage = "https://github.com/carlosferreyra/korvex"
+description = "The Kernel-grade Orchestrator for Seamless Polyglot Execution."

@@ -1,0 +1,11 @@
+[package]
+name = "korvex-types"
+description = "Shared type definitions and data model used across all Korvex crates."
+version.workspace = true
+edition = "2021"
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+
+[dependencies]

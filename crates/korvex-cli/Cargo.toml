@@ -1,0 +1,16 @@
+[package]
+name = "korvex-cli"
+description = "Command-line interface for scaffolding projects and generating bindings with Korvex."
+version.workspace = true
+edition = "2021"
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+
+[[bin]]
+name = "korvex"
+path = "src/main.rs"
+
+[dependencies]
+korvex = { path = "../korvex" }
