@@ -38,7 +38,7 @@ responsibility. Read it before making changes.
 ## Making changes
 
 - Keep commits focused. One logical change per commit.
-- Match the existing code style. Run `cargo fmt --all` before committing.
+- Match the existing code style. Run `cargo fmt --all` to format, then verify with `cargo xtask check`.
 - Do not reformat or refactor code unrelated to your change.
 - No speculative abstractions. No features beyond what the issue asks for.
 
@@ -60,11 +60,25 @@ cargo xtask build   # includes test + release build + install
 
 PRs that fail either of these will not be reviewed.
 
+## Commit format
+
+Commits MUST follow [Conventional Commits](https://www.conventionalcommits.org/).
+
+Format: `<type>(<scope>): <description>`
+
+Common types: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`, `ci`. Scope is the crate name
+without the `korvex-` prefix (e.g. `feat(macros):`, `fix(core):`).
+
+## Branch naming
+
+Branches must follow `<agent>/<task>` format (e.g. `claude/define-roadmap`, `human/add-wasi`).
+All branches target `main`.
+
 ## Pull request guidelines
 
-- Title must be under 70 characters. Use the body for detail.
-- Link the relevant issue if one exists.
-- Do not push to `main` directly.
+- Title must be under 70 characters and follow conventional commit format.
+- Use the body for detail. Link the relevant issue if one exists.
+- Do not push to `main` directly. Open a PR immediately after your first push.
 - Do not amend published commits.
 
 ## Versioning

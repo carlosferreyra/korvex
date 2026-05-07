@@ -14,7 +14,7 @@ adapter model that keeps each language backend independent from the core engine.
 ```toml
 # Cargo.toml
 [dependencies]
-korvex = { version = "0.1", features = ["python"] }
+korvex = { version = "0.0.1", features = ["python"] }
 ```
 
 ```rust
