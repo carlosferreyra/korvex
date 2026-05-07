@@ -93,10 +93,11 @@ chore(deps): bump pyo3 to 0.23
 
 - Keep commits focused. One logical change per commit.
 - PR titles must be short (under 70 characters) and also follow conventional commit format.
-- Branch names must follow `<agent>/<task>` format (e.g. `claude/define-roadmap`,
-  `copilot/fix-core`, `human/add-wasi`). All branches target `main` (or `dev` if it exists).
-- Do not push to `main` directly. Open a PR immediately after the first push. PRs are opened as
-  ready for review — do not open drafts.
+- AI agent branches must follow `<agent>/<task>` format (e.g. `claude/define-roadmap`,
+  `copilot/fix-core`). All branches target `dev`.
+- `main` is protected — releases only. Do not push to `main` directly or open PRs against it.
+- Open a PR against `dev` immediately after the first push. PRs are opened as ready for review —
+  do not open drafts.
 - Do not amend published commits.
 
 ## Environment bootstrap
