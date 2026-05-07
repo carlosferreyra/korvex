@@ -61,8 +61,8 @@ Targets `wasm32-wasip1/p2` today; designed for incremental `wasip3`/`wasip4` sup
 Dev automation. Not published to crates.io. Invoked via `cargo xtask <cmd>` using the alias in
 `.cargo/config.toml`. Three checkpoint commands that form a pyramid — each includes the previous:
 
-| Command             | What it runs                                          |
-| ------------------- | ----------------------------------------------------- |
-| `cargo xtask check` | `cargo fmt --all` + `check` + `clippy -D warnings`    |
-| `cargo xtask test`  | check + `cargo test --workspace`                      |
-| `cargo xtask build` | test + `cargo build --release` + `cargo install`      |
+| Command             | What it runs                                                |
+| ------------------- | ----------------------------------------------------------- |
+| `cargo xtask check` | `cargo fmt --all --check` + `check` + `clippy -D warnings` |
+| `cargo xtask test`  | check + `cargo test --workspace`                            |
+| `cargo xtask build` | test + `cargo build --release` + `cargo install`            |

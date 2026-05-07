@@ -95,9 +95,8 @@ chore(deps): bump pyo3 to 0.23
 - PR titles must be short (under 70 characters) and also follow conventional commit format.
 - Branch names must follow `<agent>/<task>` format (e.g. `claude/define-roadmap`,
   `copilot/fix-core`, `human/add-wasi`). All branches target `main` (or `dev` if it exists).
-- Do not push to `main` directly. Always open a **draft PR** immediately after the first push. All
-  PRs start as drafts. A CI workflow will auto-promote drafts to ready when all checks pass. Do not
-  manually mark a PR ready — let CI do it.
+- Do not push to `main` directly. Open a PR immediately after the first push. PRs are opened as
+  ready for review — do not open drafts.
 - Do not amend published commits.
 
 ## Environment bootstrap
