@@ -1,0 +1,30 @@
+name: Pull Request
+description: Default pull request template
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What does this PR do and why?
+    validations:
+      required: true
+
+  - type: textarea
+    id: changes
+    attributes:
+      label: Changes
+      description: Bullet list of what changed.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: '`cargo xtask test` passes'
+          required: true
+        - label: 'Follows conventional commit format'
+          required: true
+        - label: 'No unrelated changes'
+          required: true
