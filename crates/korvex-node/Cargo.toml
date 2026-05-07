@@ -1,6 +1,6 @@
 [package]
-name = "korvex-types"
-description = "Shared type definitions and data model used across all Korvex crates."
+name = "korvex-node"
+description = "Node.js adapter — emits napi-rs-based bindings from the Korvex IR."
 version.workspace = true
 edition.workspace = true
 authors.workspace = true
@@ -9,3 +9,4 @@ repository.workspace = true
 homepage.workspace = true
 
 [dependencies]
+korvex-adapter = { path = "../korvex-adapter" }

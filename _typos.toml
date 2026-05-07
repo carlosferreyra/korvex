@@ -1,0 +1,7 @@
+[default.extend-words]
+korvex = "korvex"
+Korvex = "Korvex"
+napi = "napi"
+wasi = "wasi"
+wasip = "wasip"
+wasix = "wasix"

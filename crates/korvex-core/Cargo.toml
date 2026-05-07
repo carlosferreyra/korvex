@@ -1,8 +1,8 @@
 [package]
-name = "korvex-gen"
-description = "Code generation engine — emits idiomatic bindings for each target language."
+name = "korvex-core"
+description = "Core binding engine — IR processing and adapter dispatch."
 version.workspace = true
-edition = "2021"
+edition.workspace = true
 authors.workspace = true
 license.workspace = true
 repository.workspace = true
@@ -10,3 +10,4 @@ homepage.workspace = true
 
 [dependencies]
 korvex-types = { path = "../korvex-types" }
+korvex-adapter = { path = "../korvex-adapter" }

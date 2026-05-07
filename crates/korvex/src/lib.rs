@@ -1,14 +1,2 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
-}
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+// Public SDK surface. Re-exports the macro and core engine for downstream consumers.
+pub use korvex_macros::export;

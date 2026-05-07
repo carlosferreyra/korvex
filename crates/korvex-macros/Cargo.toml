@@ -1,12 +1,15 @@
 [package]
-name = "korvex-ffi"
-description = "FFI layer and ABI bridge — exposes Rust types across language boundaries."
+name = "korvex-macros"
+description = "Procedural macros for annotating Rust types and functions for binding generation."
 version.workspace = true
-edition = "2021"
+edition.workspace = true
 authors.workspace = true
 license.workspace = true
 repository.workspace = true
 homepage.workspace = true
+
+[lib]
+proc-macro = true
 
 [dependencies]
 korvex-types = { path = "../korvex-types" }

@@ -1,6 +1,6 @@
 [package]
-name = "korvex-types"
-description = "Shared type definitions and data model used across all Korvex crates."
+name = "korvex-python"
+description = "Python adapter — emits pyo3-based bindings from the Korvex IR."
 version.workspace = true
 edition.workspace = true
 authors.workspace = true
@@ -9,3 +9,4 @@ repository.workspace = true
 homepage.workspace = true
 
 [dependencies]
+korvex-adapter = { path = "../korvex-adapter" }

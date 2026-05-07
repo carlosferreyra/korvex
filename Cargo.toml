@@ -1,18 +1,20 @@
 [workspace]
-members = [
-    "crates/korvex",
-    "crates/korvex-cli",
-    "crates/korvex-types",
-    "crates/korvex-ffi",
-    "crates/korvex-gen",
-]
+members = ["crates/*"]
 resolver = "2"
 
 [workspace.package]
-version = "0.1.0"
-edition = "2021"
+version = "0.0.1"
+edition = "2024"
+rust-version = "1.85.0"
 authors = ["Carlos Eduardo Ferreyra <eduferreyraok@gmail.com>"]
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/carlosferreyra/korvex"
 homepage = "https://github.com/carlosferreyra/korvex"
-description = "The Kernel-grade Orchestrator for Seamless Polyglot Execution."
+description = "Generate idiomatic language bindings from annotated Rust code."
+
+[profile.release]
+lto = true
+codegen-units = 1
+
+[profile.dist]
+inherits = "release"
