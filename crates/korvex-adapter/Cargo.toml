@@ -1,0 +1,12 @@
+[package]
+name = "korvex-adapter"
+description = "BindingAdapter trait — the contract all language adapters implement."
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+
+[dependencies]
+korvex-types = { path = "../korvex-types" }
